@@ -1,0 +1,38 @@
+body {
+    height: 0vh;
+
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 450px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1 {
+    height: 30px;
+    width: 500px;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    height: 30px;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 10px;
+}
+
+#para {
+    margin-top: 30px;
+}
