@@ -17,6 +17,7 @@ html_underline.addEventListener('click', function () {
 
 html_bold.addEventListener('click', function () {
     para.style.fontWeight = "bold";
+    para.style.textDecoration = "none"
 
 
 
@@ -25,18 +26,36 @@ html_bold.addEventListener('click', function () {
 
 html_capitalize.addEventListener('click', function () {
     para.style.textTransform = "capitalize"
+    para.style.textDecoration = "none"
+
 
 
 })
 
 html_italic.addEventListener('click', function () {
     para.style.fontStyle = "italic"
+    para.style.textDecoration = "none"
+
 
 
 })
 
 html_color.addEventListener('click', function () {
     para.style.color = "red"
+    para.style.textDecoration = "none"
+
 
 
 })
+
+// console.log(1> 2 > 3); //false 
+// console.log(3> 2 > 1); //false
+// console.log(3 < 2 < 1);//true
+// var heading = document.getElementById("heading")
+// var arr = ['umair ', "habib"]
+// var res = 0;
+// var btn = document.getElementById("btn")
+// btn.addEventListener("click", function () {
+//     heading.innerText = (arr[res++]);
+
+// }) 
