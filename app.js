@@ -8,54 +8,38 @@ var html_color = document.getElementById('color')
 
 var para = document.getElementById('para');
 
-
+var isUnderlined = false;
+var isBold = false;
+var isItalic = false;
+var isCapitalized = false;
+var isColored = false;
 
 html_underline.addEventListener('click', function () {
-
-    para.style.textDecoration = "underline"
+    isUnderlined = !isUnderlined
+    para.style.textDecoration = isUnderlined ? "underline" : "none";
 })
 
 html_bold.addEventListener('click', function () {
-    para.style.fontWeight = "bold";
-    para.style.textDecoration = "none"
+    isBold = !isBold
 
-
-
+    para.style.fontWeight = isBold ? "bold" : "normal"
 
 })
 
 html_capitalize.addEventListener('click', function () {
-    para.style.textTransform = "capitalize"
-    para.style.textDecoration = "none"
-
-
+    isCapitalized = !isCapitalized
+    para.style.textTransform = isCapitalized ? "capitalize" : "none"
 
 })
 
 html_italic.addEventListener('click', function () {
-    para.style.fontStyle = "italic"
-    para.style.textDecoration = "none"
-
-
+    isItalic = !isItalic
+    para.style.fontStyle = isItalic ? "italic" : "noraml"
 
 })
 
 html_color.addEventListener('click', function () {
-    para.style.color = "red"
-    para.style.textDecoration = "none"
-
-
+    isColored = !isColored
+    para.style.color = isColored ? "red" : "black"
 
 })
-
-// console.log(1> 2 > 3); //false 
-// console.log(3> 2 > 1); //false
-// console.log(3 < 2 < 1);//true
-// var heading = document.getElementById("heading")
-// var arr = ['umair ', "habib"]
-// var res = 0;
-// var btn = document.getElementById("btn")
-// btn.addEventListener("click", function () {
-//     heading.innerText = (arr[res++]);
-
-// }) 
